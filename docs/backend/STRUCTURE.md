@@ -32,4 +32,52 @@
    - Формирование данных для графиков.
 
 ## Файловая структура проекта
+Akademos/
+├── backend/
+│ ├── src/
+│ │ ├── controllers/ # Контроллеры (обработчики запросов)
+│ │ │ ├── authController.js
+│ │ │ ├── studentController.js
+│ │ │ ├── testController.js
+│ │ │ └── ...
+│ │ ├── models/ # Модели Sequelize
+│ │ │ ├── User.js
+│ │ │ ├── Student.js
+│ │ │ ├── Test.js
+│ │ │ └── ...
+│ │ ├── routes/ # Маршруты API
+│ │ │ ├── authRoutes.js
+│ │ │ ├── studentRoutes.js
+│ │ │ └── ...
+│ │ ├── middleware/ # Промежуточные обработчики
+│ │ │ ├── authMiddleware.js
+│ │ │ ├── uploadMiddleware.js (Multer)
+│ │ │ └── ...
+│ │ ├── services/ # Бизнес-логика
+│ │ │ ├── studentService.js
+│ │ │ ├── testService.js
+│ │ │ └── ...
+│ │ ├── utils/ # Вспомогательные функции
+│ │ │ ├── jwtHelper.js
+│ │ │ └── ...
+│ │ └── app.js # Точка входа
+│ ├── tests/ # Тесты (модульные, интеграционные)
+│ │ ├── auth.test.js
+│ │ └── ...
+│ ├── uploads/ # Папка для загруженных файлов (в разработке)
+│ ├── Dockerfile
+│ ├── docker-compose.yml
+│ ├── .env.example
+│ ├── package.json
+│ └── README.md
+├── docs/ # Документация
+│ └── backend/ # Файлы документации бэкенда
+│ ├── README.md
+│ ├── ARCHITECTURE.md
+│ ├── STRUCTURE.md
+│ ├── API.md
+│ ├── TECH_STACK.md
+│ ├── CI_CD_PIPELINE.md
+│ └── DEPLOYMENT.md
+└── frontend/ # Клиентская часть (описана отдельно)
 
